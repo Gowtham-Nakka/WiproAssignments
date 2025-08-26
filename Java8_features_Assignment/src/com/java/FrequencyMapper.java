@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.java;
 
 import java.util.*;
@@ -13,3 +14,20 @@ public class FrequencyMapper {
         System.out.println(nameCountMap);
     }
 }
+=======
+package com.java;
+
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class FrequencyMapper {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Alice", "Bob", "Alice", "David", "Bob", "Alice");
+
+        Map<String, Long> nameCountMap = names.stream()
+            .collect(Collectors.groupingBy(name -> name, Collectors.counting()));
+
+        System.out.println(nameCountMap);
+    }
+}
+>>>>>>> d065153 (Added NewFolder)

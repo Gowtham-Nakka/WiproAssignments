@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.java;
 
 public class GreetingsPrinter {
@@ -15,3 +16,22 @@ public class GreetingsPrinter {
         printer.print(message);
     }
 }
+=======
+package com.java;
+
+public class GreetingsPrinter {
+    public static void main(String[] args) {
+        MessagePrinter printer = message -> System.out.println("Greeting: " + message);
+        greetUser("Welcome to Wipro!", printer);
+    }
+
+    @FunctionalInterface
+    interface MessagePrinter {
+        void print(String message);
+    }
+
+    public static void greetUser(String message, MessagePrinter printer) {
+        printer.print(message);
+    }
+}
+>>>>>>> d065153 (Added NewFolder)
