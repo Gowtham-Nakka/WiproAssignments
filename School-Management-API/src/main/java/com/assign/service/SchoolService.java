@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 package com.assign.service;
 
 import com.assign.entities.School;
@@ -12,4 +15,24 @@ public interface SchoolService {
 
     List<School> getByAddress(String address);       
     List<School> getSchoolsByTeacherExperience(int exp); 
+=======
+>>>>>>> my-feature-branch
+package com.assign.service;
+
+import com.assign.entities.School;
+import java.util.List;
+
+public interface SchoolService {
+
+    School saveSchool(School school);
+    List<School> getAll();
+    School getById(long id);
+    School updateAddress(long id, String newAddress);
+
+    List<School> getByAddress(String address);       
+    List<School> getSchoolsByTeacherExperience(int exp); 
+<<<<<<< HEAD
+=======
+>>>>>>> af4bfed9 (added all the files)
+>>>>>>> my-feature-branch
 }

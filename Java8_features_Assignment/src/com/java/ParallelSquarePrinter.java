@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 package com.java;
 
 import java.util.*;
@@ -10,3 +13,21 @@ public class ParallelSquarePrinter {
                .forEach(n -> System.out.println("Square of " + n + " = " + (n * n)));
     }
 }
+=======
+>>>>>>> my-feature-branch
+package com.java;
+
+import java.util.*;
+
+public class ParallelSquarePrinter {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(2, 4, 6, 8, 10);
+
+        numbers.parallelStream()
+               .forEach(n -> System.out.println("Square of " + n + " = " + (n * n)));
+    }
+}
+<<<<<<< HEAD
+=======
+>>>>>>> d065153 (Added NewFolder)
+>>>>>>> my-feature-branch
